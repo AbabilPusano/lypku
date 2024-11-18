@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\fullController;
 
@@ -15,6 +18,17 @@ Route::get('/tentang', function () {
 Route::get('/artikel', [fullController::class, 'indexArtikel'])->name('artikel');
 Route::get('/isi_artikel/{id}', [fullController::class, 'showArtikel'])->name('isi_artikel');
 
+Route::get('/artikel/{id}/download', function ($id) {
+    $response = Http::get("http://127.0.0.1:8000/api/artikel/{$id}");
+
+    if ($response->successful()) {
+        $artikel = $response->json();
+    } else {
+        $artikel = null; // Jika gagal, tampilkan null
+    } // Pastikan Anda memuat data artikel
+    $pdf = Pdf::loadView('detail_artikel_pdf', compact('artikel')); // Gunakan view khusus untuk PDF
+    return $pdf->download('artikel-' . $id . '.pdf'); // Nama file PDF
+})->name('artikel.download');
 
 Route::get('/belanja', function () {
     return view('belanja');

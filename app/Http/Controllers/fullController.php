@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class fullController extends Controller
 {
@@ -386,6 +387,13 @@ class fullController extends Controller
         }
 
         return view('admin.dashboardad');
+    }
+
+    public function generatePDF()
+    {
+        $pdf = PDF::loadView('myPDF');
+
+        return $pdf->download('itsolutionstuff.pdf');
     }
 
 }

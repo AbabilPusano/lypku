@@ -167,6 +167,9 @@
                                 kembali ke halaman sebelumnya
                             </button>
                         </a>
+                        <a href="{{ route('artikel.download', $artikel['id']) }}" class=" mx-8 download-btn px-5 py-2 mt-8 font-poppins bg-[#D91656] hover:bg-[#D10363] text-white rounded-lg">
+                            Download PDF
+                        </a>
                     </div>
                 </div>
             </div>
