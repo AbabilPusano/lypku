@@ -181,7 +181,7 @@
                                 {{ $artikel['judul'] }}
                             </div>
                             <div class="p-5 text-center">
-                                {{ $artikel['deskripsi'] }}
+                                {{ \Illuminate\Support\Str::limit($artikel['deskripsi'], 100, '...') }}
                             </div>
                             <div class="px-6 pt-2 pb-4">
                                 <div class="flex items-center justify-center">
