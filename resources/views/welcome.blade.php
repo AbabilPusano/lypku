@@ -78,7 +78,7 @@
     <!-- Modal Login  -->
     <dialog id="modal_login" class="modal backdrop-blur-lg">
         <div class="modal-box font-poppins p-0 w-76 lg:w-96 flex flex-col">
-            <div class="flex items-center bg-[#047D00] rounded-t-lg h-24 lg:h-40">
+            <div class="flex items-center bg-pink-500 rounded-t-lg h-24 lg:h-40">
                 <h2 class="text-2xl lg:text-5xl font-bold text-center text-white w-full">Login</h2>
             </div>
             <div class="px-8 pt-4 pb-12">
@@ -86,22 +86,22 @@
                     <div class="flex flex-col">
                         <label for="emailLogin">Email</label>
                         <input type="text" id="emailLogin" placeholder="Masukkan email"
-                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-[#047D00] focus-border-[#047D00]">
+                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-pink-500 focus-border-pink-500">
                     </div>
                     <div class="flex flex-col">
                         <label for="passwordLogin">Password</label>
                         <input type="password" id="passwordLogin" placeholder="Masukkan password"
-                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-[#047D00] focus-border-[#047D00]">
+                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-pink-500 focus-border-pink-500">
                     </div>
                     <div class="flex flex-col mt-4">
                         <button type="submit"
-                            class="p-2 rounded-md bg-[#047D00] text-white hover:bg-[#035700]">Login</button>
+                            class="p-2 rounded-md bg-pink-500 text-white hover:bg-pink-400">Login</button>
                     </div>
                 </form>
                 <div class="mt-2 text-center">
                     Belum punya akun? <form method="dialog" class="inline">
                         <button
-                            class="buttonSwitchToLoginOrRegister text-[#D91656] hover:text-[#035700] hover:underline hover:underline-[#D91656] hover:underline-offset-4"
+                            class="buttonSwitchToLoginOrRegister text-[#D91656] hover:text-pink-500 hover:underline hover:underline-[#D91656] hover:underline-offset-4"
                             onclick="modal_register.showModal()">Daftar!</button>
                     </form>
                 </div>
@@ -113,7 +113,7 @@
     <!-- Modal Register  -->
     <dialog id="modal_register" class="modal backdrop-blur-lg">
         <div class="modal-box font-poppins p-0 w-76 lg:w-96 flex flex-col">
-            <div class="flex items-center bg-[#047D00] rounded-t-lg h-24 lg:h-40">
+            <div class="flex items-center bg-pink-500 rounded-t-lg h-24 lg:h-40">
                 <h2 class="text-2xl lg:text-5xl font-bold text-center text-white w-full">Daftar</h2>
             </div>
             <div class="px-8 pt-4 pb-12">
@@ -121,12 +121,12 @@
                     <div class="flex flex-col">
                         <label for="namaRegister">Nama</label>
                         <input type="text" id="namaRegister" placeholder="Masukkan nama"
-                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-[#047D00] focus-border-[#047D00]">
+                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-pink-500 focus-border-pink-500">
                     </div>
                     <div class="flex flex-col">
                         <label for="username-register">Email</label>
                         <input type="text" id="username-register" placeholder="Masukkan email"
-                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-[#047D00] focus-border-[#047D00]">
+                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-pink-500 focus-border-pink-500">
                     </div>
                     <div class="flex flex-col">
                         <label for="password-register">Password</label>
@@ -138,12 +138,12 @@
                                     for="toggle-pw"><i class="fa-solid fa-eye"></i></label>
                             </div>
                             <input type="password" id="password-register" placeholder="Masukkan password"
-                                class="js-password w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-[#047D00] focus-border-[#047D00]">
+                                class="js-password w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-pink-500 focus-border-pink-500">
                         </div>
                     </div>
                     <div class="flex flex-col mt-4">
                         <button type="submit"
-                            class="p-2 rounded-md bg-[#047D00] text-white hover:bg-[#035700]">Daftar</button>
+                            class="p-2 rounded-md bg-pink-500 text-white hover:bg-pink-500">Daftar</button>
                             <div class="spinner-border text-primary" role="status" id="loadreg" style="display: none; align-items: center;">
                                 <span class="visually-hidden">Loading...</span>
                             </div>
